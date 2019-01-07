@@ -19,9 +19,9 @@
 		}
 		
 		private function initialize():void {
-			trace( 'repair03_atHome' );
+			trace( 'repair04_atOffice' );
 			
-			stage.color = 0xFF00FF;
+			stage.color = 0x0000FF;
 			
 			mLdr = new Loader();
 			mLdr.contentLoaderInfo.addEventListener(Event.COMPLETE,onComplete);
