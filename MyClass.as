@@ -19,7 +19,9 @@
 		}
 		
 		private function initialize():void {
-			trace( 'repair02_atOffice' );
+			trace( 'repair03_atHome' );
+			
+			stage.color = 0xFF00FF;
 			
 			mLdr = new Loader();
 			mLdr.contentLoaderInfo.addEventListener(Event.COMPLETE,onComplete);
@@ -30,7 +32,8 @@
 		private function onComplete($evt:Event):void {
 			var kimg:Bitmap = mLdr.content as Bitmap;
 			kimg.height = 500;
-			kimg.scaleX = kimg.scaleY;			
+			kimg.scaleX = kimg.scaleY;		
+			kimg.alpha = 0.5;
 			this.addChild( kimg );
 			
 			
